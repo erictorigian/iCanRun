@@ -12,6 +12,8 @@
 		078686F82086362800E40ED7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 078686F62086362800E40ED7 /* Main.storyboard */; };
 		078686FA2086362A00E40ED7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 078686F92086362A00E40ED7 /* Assets.xcassets */; };
 		078686FD2086362A00E40ED7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 078686FB2086362A00E40ED7 /* LaunchScreen.storyboard */; };
+		0786870B2086380000E40ED7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0786870A2086380000E40ED7 /* GoogleService-Info.plist */; };
+		CBFB7FFA9A66E2381F73A586 /* Pods_iCanRun.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9161C7E7023BBADA2A526C12 /* Pods_iCanRun.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,10 @@
 		078686F92086362A00E40ED7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		078686FC2086362A00E40ED7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		078686FE2086362A00E40ED7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0786870A2086380000E40ED7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5F2217CB12EAA789D2E256C0 /* Pods-iCanRun.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iCanRun.release.xcconfig"; path = "Pods/Target Support Files/Pods-iCanRun/Pods-iCanRun.release.xcconfig"; sourceTree = "<group>"; };
+		9161C7E7023BBADA2A526C12 /* Pods_iCanRun.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iCanRun.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D28C241582353CDBB6DB0EF1 /* Pods-iCanRun.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iCanRun.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iCanRun/Pods-iCanRun.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBFB7FFA9A66E2381F73A586 /* Pods_iCanRun.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +47,8 @@
 			children = (
 				078686F12086362800E40ED7 /* iCanRun */,
 				078686F02086362800E40ED7 /* Products */,
+				C402D829744307C7E12CA48D /* Pods */,
+				567A5D0380E7EAF7F71F48DA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,6 +68,7 @@
 				078687062086369700E40ED7 /* View */,
 				078687072086369D00E40ED7 /* Controller */,
 				078686F22086362800E40ED7 /* AppDelegate.swift */,
+				0786870A2086380000E40ED7 /* GoogleService-Info.plist */,
 				078686F92086362A00E40ED7 /* Assets.xcassets */,
 				078686FE2086362A00E40ED7 /* Info.plist */,
 			);
@@ -96,6 +106,23 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		567A5D0380E7EAF7F71F48DA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9161C7E7023BBADA2A526C12 /* Pods_iCanRun.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C402D829744307C7E12CA48D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D28C241582353CDBB6DB0EF1 /* Pods-iCanRun.debug.xcconfig */,
+				5F2217CB12EAA789D2E256C0 /* Pods-iCanRun.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,9 +130,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 078687012086362A00E40ED7 /* Build configuration list for PBXNativeTarget "iCanRun" */;
 			buildPhases = (
+				4A5895FD738B30AEE8E1E3D7 /* [CP] Check Pods Manifest.lock */,
 				078686EB2086362800E40ED7 /* Sources */,
 				078686EC2086362800E40ED7 /* Frameworks */,
 				078686ED2086362800E40ED7 /* Resources */,
+				FA7D45825E00CB08A50E571C /* [CP] Embed Pods Frameworks */,
+				3B0E802D1CBF3E96833E1026 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -155,12 +185,64 @@
 			buildActionMask = 2147483647;
 			files = (
 				078686FD2086362A00E40ED7 /* LaunchScreen.storyboard in Resources */,
+				0786870B2086380000E40ED7 /* GoogleService-Info.plist in Resources */,
 				078686FA2086362A00E40ED7 /* Assets.xcassets in Resources */,
 				078686F82086362800E40ED7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3B0E802D1CBF3E96833E1026 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iCanRun/Pods-iCanRun-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4A5895FD738B30AEE8E1E3D7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iCanRun-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FA7D45825E00CB08A50E571C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iCanRun/Pods-iCanRun-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		078686EB2086362800E40ED7 /* Sources */ = {
@@ -310,15 +392,13 @@
 		};
 		078687022086362A00E40ED7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D28C241582353CDBB6DB0EF1 /* Pods-iCanRun.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C57K6822B6;
 				INFOPLIST_FILE = iCanRun/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.torigian.iCanRun;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -328,15 +408,13 @@
 		};
 		078687032086362A00E40ED7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F2217CB12EAA789D2E256C0 /* Pods-iCanRun.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C57K6822B6;
 				INFOPLIST_FILE = iCanRun/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.torigian.iCanRun;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
